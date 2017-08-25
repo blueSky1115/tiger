@@ -1,0 +1,326 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;
+}
+li{
+    list-style:none;
+}
+html{
+    overflow:hidden;
+}
+#main{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background: url("../img/bg.png") no-repeat  center center;
+    background-size: 100% 100%;
+}
+.box{
+    width: 100%;
+    min-height: 100%;
+    background: url(../img/tiger.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 1;
+}
+.alter{
+    width: 60%;
+    height: 10%;
+    background: url(../img/begin.png) no-repeat center center;
+    position: absolute;
+    left: 50%;
+    top: 68%;
+    margin-left: -30%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+.prizeBtn{
+    width: 60%;
+    height: 10%;
+    background: url(../img/look.png) no-repeat center center;
+    position: absolute;
+    left: 50%;
+    top: 81%;
+    margin-left: -30%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+/*---------------------------------------------------------------------------------*/
+.scroll{
+    width: 76%;
+    height: 12.5%;
+    position: absolute;
+    left: 12%;
+    top:38.4%;
+    overflow: hidden;
+    clear: both;
+    /*z-index: 2;*/
+
+}
+.scroll div{
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin: 0 1.5%;
+    position: relative;
+
+}
+.scroll div img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+.scroll .s1 .imgBox{
+    width: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.scroll .s2 .imgBox{
+    width: 100%;
+    transition: 1s 0.2s;
+    -webkit-transition: 1s 0.2s;
+}
+.scroll .s3 .imgBox{
+    width: 100%;
+    transition: 1s 0.4s;
+    -webkit-transition: 1s 0.4s;
+}
+.scroll div img.first{
+    left: 0;
+    top: 0;
+
+}
+.scroll div img.second{
+    left: 0;
+    top: 0;
+}
+/*<!--弹窗01中奖页面------------------------------------------->*/
+.pupop{
+    width: 100%;
+    height: 100%;
+    z-index:100;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.tan{
+    width: 100%;
+    height: 58%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    background: url(../img/pupop.png) no-repeat center top;
+    background-size: contain;
+}
+.tan img{
+    width: 100%;
+}
+.pupop_content{
+    width: 74%;
+    height: 42%;
+    position: absolute;
+    left: 13%;
+    top: 17%;
+    /*position: relative;*/    /*2个*/
+}
+.prize{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    overflow: hidden;
+}
+.prize{
+    width: 21%;
+}
+.prize{
+    width: 13%;
+    height: 90%;
+}
+.sure{
+    width: 100%;
+    position: absolute;
+    top: 85%;
+}
+.shengyu{
+    width: 100%;
+    position: absolute;
+    top: 58.5%;
+    text-align: center;
+    line-height: 1.2em;
+    font-size: 14px;
+    color: #166c63;
+    z-index: 8;
+    font-weight: bold;
+}
+.shengyu span{
+    padding-left: 10px;
+}
+/*<!--弹窗01中奖页面-------------------------------------------------------->*/
+
+/*<!--弹窗02没有中奖页面------------------------------------------->*/
+.pupop2{
+    width: 100%;
+    height: 100%;
+    z-index:100;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.tan2{
+    width: 100%;
+    height: 58%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    background: url(../img/nozhongjiang.png) no-repeat center top;
+    background-size: contain;
+}
+.tan2 img{
+    width: 100%;
+}
+.pupop_content2{
+    width: 74%;
+    height: 42%;
+    position: absolute;
+    left: 13%;
+    top: 17%;
+    /*position: relative;*/    /*2个*/
+}
+.prize2{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    overflow: hidden;
+}
+.prize2{
+    width: 21%;
+}
+.prize2{
+    width: 13%;
+    height: 90%;
+}
+.sure2{
+    width: 100%;
+    position: absolute;
+    top: 85%;
+}
+/*<!--弹窗02没有中奖页面------------------------------------------->*/
+
+
+
+/*<!--弹窗03没有次数页面------------------------------------------------------------->*/
+.pupop3{
+    width: 100%;
+    height: 100%;
+    z-index:100;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.tan3{
+    width: 100%;
+    height: 58%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    background: url(../img/num.png) no-repeat center top;
+    background-size: contain;
+}
+.tan3 img{
+    width: 100%;
+}
+.pupop_content3{
+    width: 74%;
+    height: 42%;
+    position: absolute;
+    left: 13%;
+    top: 17%;
+    /*position: relative;*/    /*2个*/
+}
+.prize3{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    overflow: hidden;
+}
+.prize3{
+    width: 21%;
+}
+.prize3{
+    width: 13%;
+    height: 90%;
+}
+.sure3{
+    width: 100%;
+    position: absolute;
+    top: 85%;
+}
+/*<!--弹窗03没有次数页面------------------------------------------------------------->*/
+
+
+
+/*<!--弹窗04我的奖品页面----------------------------------------------->*/
+.pupop4{
+    width: 100%;
+    height: 100%;
+    z-index:100;
+    background: url("../img/zongjiangyemian.jpg") no-repeat  center center;
+    background-size: 100% 100%;
+    /*background-size: contain;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.tan4 img{
+    width: 100%;
+}
+.pupop_content4{
+    width: 28%;
+    height: 18%;
+    position: absolute;
+    left: 62%;
+    top: 27%;
+    background: url(../img/02.png) no-repeat;
+    background-size: 50% 50%;
+}
+/*.prize4{*/
+    /*width: 100%;*/
+    /*height: 30%;*/
+    /*position: absolute;*/
+    /*left: 1%;*/
+    /*top: 10%;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.prize4{*/
+    /*width: 21%;*/
+/*}*/
+.prize4{
+    width: 13%;
+    height: 90%;
+}
+.sure4{
+    width: 100%;
+    position: absolute;
+    top: 81%;
+}
+/*<!--弹窗04我的奖品页面----------------------------------------------->*/
